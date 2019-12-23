@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2 {
+h1, h2, button {
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -12,7 +12,7 @@ h1, h2 {
 #wrapper {
   background-color: lightblue;
   position: absolute;
-  width: 30%;
+  width: 30vw;
   height: 70%;
   left: 35%;
   top: 15%;
@@ -22,20 +22,62 @@ h1, h2 {
 #disp {
   width: 100%;
   height: 20%;
-  position: relative;
+  position: static;
   left: 0;
   top: 0;
   background: blue;
-}
-
-#numsFromOne {
-  width: 75%;
-  height: 48%;
-  background: red;
 }
 
 .btnNum {
 /*  border: solid 1px black;*/
   width: 33%;
   height: 33%;
+}
+
+td, tr, table {
+  border: solid 1px black;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table {
+  position: absolute;
+}
+
+#nums {
+  width: 22.5vw;
+  height: 33.6vh;
+  background: red;
+  top: 20%;
+  
+}
+
+#nums td {
+  width: 7.5vw;
+  background: yellow;
+}
+
+#PMDE {
+  width: 7.5vw;
+  top: 20%;
+  right: 0;
+  height: 80%;
+}
+
+
+button {
+  position: absolute;
+  background: transparent;
+  width: 2rem;
+  height: 2rem;
+  transition: background .1s ease-in-out;
+}
+
+button:hover {
+  background: lightblue;
+}
+
+.oneByOnehalf {
+  width: 10.60vw;
+  
 }
